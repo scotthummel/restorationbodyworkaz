@@ -1,0 +1,504 @@
+@font-face {
+    font-family: 'SofiaProLight';
+    src: url('../fonts/SofiaProLight-webfont.eot');
+    src: url('../fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SofiaProLight-webfont.woff') format('woff'),
+         url('../fonts/SofiaProLight-webfont.ttf') format('truetype'),
+         url('../fonts/SofiaProLight-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SofiaProSemiBold';
+    src: url('/fonts/SofiaProSemiBold-webfont.eot');
+    src: url('/fonts/SofiaProSemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/SofiaProSemiBold-webfont.woff') format('woff'),
+         url('/fonts/SofiaProSemiBold-webfont.ttf') format('truetype'),
+         url('/fonts/SofiaProSemiBold-webfont.svg#lane_-_poshregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #6E163A;
+}
+
+html, body {
+	background-color: #76644C;
+}
+
+p#modalities {
+	font-family: 'SofiaProSemiBold', Arial, Helvetica;
+	font-size: 26px;
+    width: 90%;
+}
+
+.front-page p {
+	width: 360px;
+	margin: 226px 0 0 20px;
+	color: #6E173A;
+}
+
+.front-page p#address {
+	margin: 190px 20px;
+	font-size: 20px;
+	color: #F2B8C4;
+    font-family: 'SofiaProSemiBold', Arial, Helvetica;
+}
+
+.container {
+	margin:50px auto 0 auto;
+}
+
+.left-col {
+	height: 700px;
+	background-color: #FDF5E8;
+	border-radius: 30px 0 0 30px;
+	padding: 0 20px;
+	z-index: 9999;
+    margin-right: 0;
+}
+
+.right-col {
+	height: 700px;
+	background-color: #FDF5E8;
+	border-radius: 0 30px 30px 0;
+	padding: 0 30px 30px 30px;
+}
+
+.center-col {
+	height: 700px;
+    margin-left: 0;
+}
+
+.frontPage {
+	height: 700px;
+	background-color: #FDF5E8;
+	border-radius: 0 30px 30px 0;
+	padding: 0 30px;
+	float: left;
+}
+
+.centerImage {
+	height: 700px;
+	float:left;
+}
+
+#logo img {
+    margin: 30px auto 5px auto;
+}
+
+h1 {
+	font-family: 'SofiaProSemiBold', Arial, Helvetica;
+	font-size: 26px;
+	color: #6E173A;
+}
+
+h2 {
+	font-family: 'SofiaProSemiBold', Arial, Helvetica;
+	font-size: 20px;
+	color: #6E173A;
+}
+
+#copy {
+	margin: 18px 0 0 0;
+}
+
+#copy p {
+	color: #878A8D;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+ul.list {
+	margin-top: 12px;
+	margin-left: 14px;
+}
+
+ul.list li {
+	font-family: 'SofiaProLight', Arial, Helvetica;
+	font-size: 12px;
+	line-height: 1.4em;
+	color: #878A8D;
+}
+
+#scroll {
+    overflow:scroll;
+    height: 600px;
+    width: 100%;
+}
+
+/* Navigation */
+nav {
+	color: #878A8D;
+    margin-top: 55px;
+}
+
+nav ul li  {
+	list-style-type: none;
+    margin-left: 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #927C6B;
+	font-family: 'SofiaProLight', Arial, Helvetica;
+	text-transform: lowercase;
+	display:block;
+    height: 30px;
+    background-color: #F9D2DB;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 10px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: #B1446F;
+    color: #FFF;
+}
+
+.nav > li > a {
+    padding: 5px 15px;
+}
+
+.nav-pills > li a {
+    border-radius: 10px;
+}
+
+.nav > li.active a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus
+{
+    background-color: #952C41;
+}
+
+/* End navigation.  Begin navbar */
+
+ul.navbar-nav li a {
+    text-decoration: none;
+    color: #927C6B;
+    font-family: 'SofiaProLight', Arial, Helvetica;
+    text-transform: lowercase;
+    display:block;
+    height: 30px;
+    background-color: #F9D2DB;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 10px;
+}
+
+.navbar-inverse {
+    background-color: #6E163A;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #952C41;
+}
+
+ul.nav.navbar-nav > li > a:hover,
+ul.nav.navbar-nav > li.active > a:hover,
+.navbar-toggle {
+    background-color: #EF679D;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #F9D2DB;
+}
+
+/* End navbar */
+
+#modalities li {
+    margin-left: 15px;
+    font-family: 'SofiaProLight', Arial, Helvetica;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #878A8D;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#modalities li strong {
+    color: #6E173A;
+}
+
+/* Contact Form */
+
+ul#contact {
+    list-style-type: none;
+}
+
+ul#contact li {
+    font-family: 'SofiaProLight', Arial, Helvetica;
+    font-size: 15px;
+    text-transform: lowercase;
+    color: #878A8D;
+    width: 500px;
+}
+
+ul#contact li label {
+    width: 40px;
+    text-align: right;
+    display:block;
+    margin-right: 15px;
+}
+
+ul#contact li input {
+    float:left;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+p.error {
+    background-color: #C975A7;
+    padding: 5px;
+    width: 300px;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    color: #FFF;
+    background-color: #6E163A;
+    font-family: 'SofiaProSemiBold', Arial, Helvetica;
+    font-size: 14px;
+    text-transform: lowercase;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.test {
+    transition: all .5s ease;
+}
+.test-enter,
+.test-leave {
+    opacity: 0;
+    transform: translate3d(10px, 0, 0);
+}
+
+
+/* End Contact Form */
+
+.col-md-4 {
+    padding: 0;
+    width: 32.54%;
+}
+
+.col-md-3.center-col {
+    padding: 0;
+    width: 22%;
+}
+
+.btn-primary {
+    background-color: #6E163A;
+    border: none;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background-color: #B1446F;
+}
+
+span.rate {
+    float: right;
+}
+
+.logo {
+    display: none;
+}
+
+#footer-links {
+    margin-top: 20px;
+    color: #FDF5E8;
+    text-align: center;
+}
+
+#footer-links a {
+    color: #FDF5E8;
+    text-decoration: none;
+}
+
+#footer-links a:hover {
+    text-decoration: underline;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+    .right-col {
+        border-radius: 0;
+        margin: 0;
+        padding: 10px 30px 30px 30px;
+        height: auto;
+    }
+
+    .left-col {
+        border-radius: 0;
+    }
+    .container {
+        margin: 0 auto;
+    }
+
+    .front-page p {
+        margin-top: 20px;
+        padding-top: 100px;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #modalities,
+    .front-page p#address {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .front-page p#address {
+        margin-top: 0;
+    }
+
+    .front-page {
+        padding-top: 70px;
+    }
+
+    .image-slice {
+        margin: 0;
+        height: 50px;
+        overflow: hidden;
+     }
+
+    .image-slice img {
+        width: 992px;
+        margin-left: -20p;
+    }
+
+    .navbar-nav {
+        display: inline-block;
+    }
+
+
+    ul#contact li {
+        margin-left: -35px;
+    }
+
+    ul#contact li input, textarea {
+        width: 100%;
+    }
+
+    ul.navbar-nav {
+        width: 100%;
+    }
+
+    ul#modalities li {
+        text-align: left;
+        margin-left: -40px;
+    }
+
+    ul.nav-tabs {
+        background-color: #952C41;
+    }
+
+    ul.nav-tabs li, ul.nav-tabs ul{
+        width: 100%;
+        padding: 7px;
+    }
+
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus {
+        background-color: #952C41;
+    }
+
+    .dropdown-menu > li > a:hover {
+        background-color: #EF679D;
+    }
+
+    nav > li > a {
+        padding: 15px;
+    }
+
+    .nav-tabs > li > a {
+        border: none;
+    }
+
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: #952C41;
+    }
+
+    a.dropdown-toggle {
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    a.dropdown-toggle:focus {
+        background-color: #952C41;
+    }
+}
+
+@media (min-width: 480px) {
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in{
+        display:block !important;
+    }
+
+    nav {
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+
+    .image-slice {
+        margin: 50px 0 0 0;
+    }
+
+    .container-fluid {
+        overflow: auto;
+    }
+
+}
+
+
