@@ -40,7 +40,7 @@
 
         <div class="form-group">
             <label for="name">Message:</label>
-            <textarea class="form-control" name="message"></textarea>
+            <textarea class="form-control" name="message" rows="10"></textarea>
 
             {!! $errors->first('message', '<p style="margin-top: 10px;color:#FFF;" class="error">:message</p>') !!}
         </div>
