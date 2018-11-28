@@ -11,7 +11,7 @@
 
         <div class="code-alchemy-container">
             <p>website design and development by:</p>
-            <a target="_blank" href="https://codealchemy.com"><img class="code-alchemy" src="/images/code-alchemy.png" alt="Code Alchemy" /></a>
+            <a target="_blank" href="https://codealchemy.com"><img class="code-alchemy" src="/images/code-alchemy-white.png" alt="Code Alchemy" /></a>
         </div>
     </div>
 </div>
