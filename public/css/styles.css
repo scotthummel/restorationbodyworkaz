@@ -329,6 +329,19 @@ span.rate {
     margin-top: 10px;
 }
 
+.code-alchemy {
+    margin-bottom: 40px;
+}
+
+.code-alchemy-container {
+    padding-top: 10px;
+    margin-top: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: 0;
+}
+
 @media (max-width: 992px) {
     .right-col {
         border-radius: 0;

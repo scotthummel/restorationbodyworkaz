@@ -8,7 +8,7 @@
         restoration bodywork and massage therapy | phoenix, az
 	</title>
 	<link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ url('css/styles.css') }}">
+	<link rel="stylesheet" href="{{ url('css/styles.css?t=') . time() }}">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
