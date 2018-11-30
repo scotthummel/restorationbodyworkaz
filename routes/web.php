@@ -22,6 +22,6 @@ Route::get('location', 'Main\LocationController@index');
 Route::get('links', 'Main\LinksController@index');
 Route::get('rates', 'Main\RatesController@index');
 Route::get('contact', 'Main\ContactController@index');
-Route::get('thank-you', 'Main\ThankYouController@index');
-
 Route::post('contact', 'Main\ContactController@store');
+Route::get('thank-you', 'Main\ContactController@thankYou');
+Route::get('error', 'Main\ContactController@error');

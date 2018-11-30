@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Rbwmt\Mailers\ContactMailer;
 use App\Rbwmt\Mailers\ThankYouMailer;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ContactController extends Controller {
 
@@ -34,35 +35,40 @@ class ContactController extends Controller {
 		//
 	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param Request $request
+     * @return Response
+     */
 	public function store(Request $request)
 	{
-		$this->validate($request, [
-			'name'  => 'required',
-		    'email' => 'required|email',
-			'message' => 'required'
-		]);
+		try {
+            $this->validate($request, [
+                'name'  => 'required',
+                'email' => 'required|email',
+                'message' => 'required'
+            ]);
 
-		$user = new \stdClass();
+            $user = new \stdClass();
 
-		$user->subject     = 'Message from the Website';
+            $user->subject     = 'Message from the Website';
 
-		$user->name        = $request->get('name');
-		$user->email       = $request->get('email');
-		$user->phone       = $request->get('phone');
-		$user->messageText = $request->get('message');
+            $user->name        = $request->get('name');
+            $user->email       = $request->get('email');
+            $user->phone       = $request->get('phone');
+            $user->messageText = $request->get('message');
 
-		$mailer = new ContactMailer($user);
-		$mailer->contact()->deliver();
+            $mailer = new ContactMailer($user);
+            $mailer->contact()->deliver();
 
-		$thanks = new ThankYouMailer($user);
-		$thanks->contact()->deliver();
+            $thanks = new ThankYouMailer($user);
+            $thanks->contact()->deliver();
 
-		return redirect()->to('thank-you');
+            return redirect()->to('thank-you');
+        } catch (\Exception $e) {
+            return redirect()->to('error');
+        }
 	}
 
 	/**
@@ -108,5 +114,19 @@ class ContactController extends Controller {
 	{
 		//
 	}
+
+	public function thankYou() {
+        $page = $this->page->getWhereSlug('thank-you');
+        return view('main.thank-you', [
+            'page' => $page
+        ]);
+    }
+
+    public function error() {
+        $page = $this->page->getWhereSlug('contact');
+        return view('main.error', [
+            'page' => $page
+        ]);
+    }
 
 }
