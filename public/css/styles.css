@@ -343,6 +343,22 @@ span.rate {
     margin-left: 0;
 }
 
+.coronavirus {
+    background-color: #952C41;
+    width: 100%;
+    padding: 20px 40px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.coronavirus.desktop {
+    margin-top: 0;
+}
+
+.coronavirus p {
+    color: #FFF;
+}
+
 @media (max-width: 992px) {
     .right-col {
         border-radius: 0;
@@ -456,6 +472,7 @@ span.rate {
 
 @media (min-width: 480px) {
 
+
     .navbar-header {
         float: none;
     }
@@ -514,5 +531,26 @@ span.rate {
     }
 
 }
+
+@media (max-width: 414px) {
+    .desktop-coronavirus {
+        display: none;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    .scroll-page .image-slice {
+        height: 590px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coronavirus.desktop {
+        margin-top: 50px;
+    }
+}
+
 
 

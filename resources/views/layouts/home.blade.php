@@ -1,5 +1,9 @@
 @include('partials.header')
+
 <body>
+<div class="desktop-coronavirus">
+    @include('partials.coronavirus')
+</div>
 	<div class="container">
         <div class="row">
 
@@ -7,6 +11,9 @@
 
             <div class="col-md-3 hidden-sm hidden-xs left-col">
                 @include('partials.nav')
+            </div>
+            <div class="visible-xs">
+                @include('partials.coronavirus')
             </div>
             <div class="col-md-3 col-xs-12 hidden-md hidden-lg image-slice">
                 <img src="/images/centerpieces/fire.jpg" />

@@ -1,6 +1,9 @@
 @include('partials.header')
 <body>
-<div class="container">
+<div class="desktop-coronavirus">
+    @include('partials.coronavirus')
+</div>
+<div class="container scroll-page">
     <div class="row">
         @include('partials.navbar')
 
@@ -8,6 +11,8 @@
             @include('partials.nav')
         </div>
         <div class="col-md-3 col-xs-12 hidden-md hidden-lg image-slice">
+            @include('partials.coronavirus')
+
             <img src="/images/centerpieces/{{ $page->image }}.jpg" />
         </div>
         <div class="col-md-3 col-xs-12 hidden-sm hidden-xs center-col">
@@ -18,7 +23,7 @@
 			<div id="copy">
 				<div id="scroll">
 					@yield('copy')
-				</textarea>
+                </div>
 			</div>
 		</div>
 	</div>

@@ -1,5 +1,8 @@
 @include('partials.header')
 <body>
+<div class="desktop-coronavirus">
+    @include('partials.coronavirus')
+</div>
 	<div id="container">
 		<div id="leftCol">
 			@include('partials.nav')
@@ -12,6 +15,6 @@
 			<div id="copy">
 				@yield('copy')
 			</div>
-		</div>	
+		</div>
 	</div>
 @include('partials.footer')
