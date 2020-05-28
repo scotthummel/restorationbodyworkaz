@@ -1,7 +1,16 @@
 <!doctype html>
 <html id="app">
 <head>
-	<meta charset="UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68233334-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-68233334-1');
+    </script>
+    <meta charset="UTF-8" />
 	<meta id="token" name="token" value="{{ csrf_token() }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>
